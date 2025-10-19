@@ -145,22 +145,17 @@ export default function HeroSection() {
               </p>
             </div>
 
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Link href={heroSlides[currentSlide].goto}>
-                <button className="group bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold shadow-2xl hover:shadow-yellow-500/50 transition-all duration-300 transform hover:scale-105 hover:-translate-y-1">
+            {/* CTA Button */}
+            <div className="flex justify-center lg:justify-start">
+              <Link href="/demo">
+                <button className="group bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 text-white px-8 sm:px-12 py-4 sm:py-5 rounded-full font-bold text-lg shadow-2xl hover:shadow-yellow-500/50 transition-all duration-300 transform hover:scale-105 hover:-translate-y-1">
                   <div className="flex items-center justify-center space-x-2">
-                    <span>Get Started</span>
-                    <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
+                    <Play className="w-5 h-5 sm:w-6 sm:h-6 group-hover:scale-110 transition-transform" />
+                    <span>Try Instant Demo</span>
+                    <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6 group-hover:translate-x-1 transition-transform" />
                   </div>
                 </button>
               </Link>
-              <button className="group bg-white/10 backdrop-blur-sm text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold border border-white/20 hover:bg-white/20 hover:border-white/40 transition-all duration-300 transform hover:scale-105">
-                <span className="flex items-center justify-center space-x-2">
-                  <Play className="w-4 h-4 sm:w-5 sm:h-5 group-hover:scale-110 transition-transform" />
-                  <span>Watch Demo</span>
-                </span>
-              </button>
             </div>
 
             {/* Slide Indicators */}

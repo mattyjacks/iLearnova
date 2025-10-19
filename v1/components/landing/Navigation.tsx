@@ -8,9 +8,7 @@ export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { name: 'Home', href: '/' },
-    { name: 'Features', href: '/#features' },
-    { name: 'Pricing', href: '/#pricing' },
+    { name: 'Try Instant Demo', href: '/demo' },
     { name: 'Contact', href: '/contact' },
   ];
 
@@ -37,11 +35,6 @@ export default function Navigation() {
                 {link.name}
               </Link>
             ))}
-            <Link href="/login">
-              <button className="bg-gradient-to-r from-yellow-400 to-orange-500 text-white px-6 py-2 rounded-full font-semibold hover:shadow-lg transition-all duration-300 transform hover:scale-105">
-                Get Started
-              </button>
-            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -68,11 +61,6 @@ export default function Navigation() {
                 {link.name}
               </Link>
             ))}
-            <Link href="/login">
-              <button className="w-full bg-gradient-to-r from-yellow-400 to-orange-500 text-white px-6 py-2 rounded-full font-semibold hover:shadow-lg transition-all duration-300">
-                Get Started
-              </button>
-            </Link>
           </div>
         </div>
       )}

@@ -53,7 +53,6 @@ export default function StatsCounter() {
       }, duration / steps);
 
       return () => clearInterval(timer);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [target]);
 
     return (
